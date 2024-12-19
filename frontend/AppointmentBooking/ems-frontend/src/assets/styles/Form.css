@@ -1,0 +1,41 @@
+.form-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+label {
+    text-align: left;
+    padding-bottom: 17px;
+}
+
+input {
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 2px solid #5a88b7;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+button {
+    border: 0.5px solid #333;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #70a6e1;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a88b7;
+}
+
+button:focus {
+    outline: none;
+}

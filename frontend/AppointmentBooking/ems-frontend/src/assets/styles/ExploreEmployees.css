@@ -1,0 +1,66 @@
+.explore-employees-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E0E0E0;
+  color: #333;
+  min-height: 100vh;
+}
+
+.employees-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 120px;
+  grid-row-gap: 5px;
+  padding-bottom: 20px;
+}
+
+.employee-card {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: 3px solid #5a88b7;
+  border-radius: 15px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.employee-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.employee-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.employee-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+.employee-card p strong {
+  font-weight: bold;
+}
+
+.employee-card:active {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .employees-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

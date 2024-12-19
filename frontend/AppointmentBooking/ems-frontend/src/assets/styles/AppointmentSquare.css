@@ -1,0 +1,16 @@
+.appointment-square {
+    background-color: #ffffff;
+    border: 2px solid #5a88b7;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.appointment-square:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
